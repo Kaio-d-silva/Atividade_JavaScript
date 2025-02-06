@@ -14,13 +14,13 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
         },
         body: JSON.stringify(data)
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        alert('Formulário  enviado com sucesso!');
-    })
-    .catch((error) => {
-        console.error('Erros:', error);
-        alert('Ocorreu um erro ao enviar o formulario!.');
-    });
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Formulário  enviado com sucesso!');
+        })
+        .catch((error) => {
+            console.error('Erros:', error);
+            alert('Ocorreu um erro ao enviar o formulario!.');
+        });
 });
